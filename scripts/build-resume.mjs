@@ -37,11 +37,16 @@ function fail(message, cause) {
  * label/value rows. Document order is preserved in both cases.
  */
 function addPaginationHooks(html) {
-  // A project is a paragraph opening with bold text, immediately followed by
-  // its bullet list. That is how the master file writes them.
+  // Projects live under a level-4 heading, each written as a bold title
+  // paragraph followed by its bullet list. Scoping to that region keeps the
+  // role entries under a level-3 heading from being treated as projects.
   let out = html.replace(
-    /<p><strong>(?:(?!<\/p>)[\s\S])*?<\/p>\s*<ul>[\s\S]*?<\/ul>/g,
-    (block) => `<section class="project">\n${block}\n</section>\n`,
+    /<h4>[\s\S]*?(?=<h[123]>|<hr\s*\/?>|$)/g,
+    (region) =>
+      region.replace(
+        /<p><strong>(?:(?!<\/p>)[\s\S])*?<\/p>\s*(?:<ul>[\s\S]*?<\/ul>)?/g,
+        (block) => `<section class="project">\n${block}\n</section>\n`,
+      ),
   );
 
   // Each h3 + following paragraph inside the skills section becomes one row.

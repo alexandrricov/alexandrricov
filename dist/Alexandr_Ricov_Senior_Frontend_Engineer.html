@@ -2,65 +2,93 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alexandr Rîcov — Senior Frontend Engineer</title>
 <style>
   /* ------------------------------------------------------------------
-     ATS-oriented resume stylesheet.
-     Single column, real selectable text, no layout tables, no images,
-     no decorative rating systems. Black on white.
+     Resume stylesheet.
+
+     Screen and print share one visual language: warm neutral palette,
+     editorial type scale, project cards, run-in skill rows.
+
+     What print deliberately keeps for ATS parsing: a single column,
+     real selectable text, logical document order, no layout tables and
+     no text rendered as an image. Card backgrounds and accent colour do
+     not affect text extraction, so they stay.
      ------------------------------------------------------------------ */
+
+  :root {
+    --bg:         #ffffff;
+    --bg-raised:  #ffffff;
+    --bg-sunken:  #f5f5f4;
+    --text:       #1c1917;
+    --text-muted: #57534e;
+    --text-faint: #78716c;
+    --border:     #e7e5e4;
+    --border-strong: #d6d3d1;
+    --accent:     #9a3412;
+
+    --radius: 8px;
+  }
 
   @page {
     size: A4;
-    margin: 14mm 15mm;
+    margin: 13mm 14mm;
   }
 
   * { box-sizing: border-box; }
 
-  html {
-    font-size: 10pt;
-  }
+  html { font-size: 10pt; -webkit-text-size-adjust: 100%; }
 
   body {
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+                 "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1rem;
-    line-height: 1.33;
-    color: #000;
-    background: #fff;
+    line-height: 1.38;
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 
   /* ---------- headings ---------- */
 
   h1 {
-    font-size: 1.95rem;
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    margin: 0 0 0.2rem;
+    font-size: 2.1rem;
+    line-height: 1.08;
+    letter-spacing: -0.022em;
+    margin: 0 0 0.18rem;
   }
 
   h2 {
-    font-size: 0.95rem;
+    font-size: 0.78rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.09em;
-    margin: 0.95rem 0 0.42rem;
-    padding-bottom: 0.18rem;
-    border-bottom: 1px solid #000;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin: 0.68rem 0 0.38rem;
+    padding-bottom: 0.22rem;
+    border-bottom: 1px solid var(--border-strong);
     break-after: avoid;
     page-break-after: avoid;
   }
 
   h3 {
-    font-size: 1.08rem;
-    margin: 0.7rem 0 0.08rem;
+    font-size: 1.1rem;
+    letter-spacing: -0.012em;
+    margin: 0.62rem 0 0.05rem;
     break-after: avoid;
     page-break-after: avoid;
   }
 
   h4 {
-    font-size: 1rem;
-    margin: 0.65rem 0 0.1rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    margin: 0.6rem 0 0.32rem;
     break-after: avoid;
     page-break-after: avoid;
   }
@@ -74,42 +102,36 @@
   /* ---------- text ---------- */
 
   p {
-    margin: 0 0 0.38rem;
+    margin: 0 0 0.32rem;
     orphans: 2;
     widows: 2;
   }
 
   strong { font-weight: 700; }
 
-  a {
-    color: #000;
-    text-decoration: none;
-  }
+  a { color: var(--text); text-decoration: none; }
 
-  hr {
-    border: 0;
-    height: 0;
-    margin: 0.35rem 0 0;
-  }
+  hr { border: 0; height: 0; margin: 0; }
 
   /* ---------- lists ---------- */
 
   ul {
-    margin: 0.16rem 0 0.42rem;
-    padding-left: 1.05rem;
+    margin: 0.12rem 0 0.3rem;
+    padding-left: 1rem;
   }
 
   li {
-    margin-bottom: 0.12rem;
+    margin-bottom: 0.11rem;
     orphans: 2;
     widows: 2;
   }
 
+  li::marker { color: var(--text-faint); }
+
   li:last-child { margin-bottom: 0; }
 
-  /* A nested list is short enough to always keep with its parent bullet. */
   ul ul {
-    margin: 0.12rem 0 0.12rem;
+    margin: 0.14rem 0;
     break-inside: avoid;
     page-break-inside: avoid;
   }
@@ -119,64 +141,134 @@
     page-break-inside: avoid;
   }
 
-  /* ---------- header block ---------- */
+  /* ---------- masthead ---------- */
 
-  .masthead { margin-bottom: 0.7rem; }
-
-  .masthead > p:first-of-type {
-    font-size: 1.05rem;
-    margin-bottom: 0.35rem;
+  .masthead {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.1rem;
   }
 
-  .masthead p { margin-bottom: 0.25rem; }
+  /* Role line, directly under the name. */
+  .masthead > p:first-of-type {
+    font-size: 1.02rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: -0.005em;
+    margin-bottom: 0.4rem;
+  }
+
+  .masthead > p:first-of-type strong { font-weight: 500; }
+
+  .masthead p { margin-bottom: 0.22rem; color: var(--text-muted); }
 
   .masthead p:last-child { margin-bottom: 0; }
 
   /* ---------- technical skills ---------- */
 
-  /* The subsection heading runs into its values as a single text flow.
-     A grid or column layout here would interleave label and value text
-     when the PDF is parsed, so this stays one continuous line of text. */
+  /* The subsection heading runs into its values as one continuous line
+     of text. A grid or column layout here would interleave label and
+     value text when the PDF is parsed. */
+  .skills {
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.45rem 0.65rem;
+  }
+
   .skills .skill-row {
-    margin-bottom: 0.22rem;
+    margin-bottom: 0.2rem;
     break-inside: avoid;
     page-break-inside: avoid;
   }
+
+  .skills .skill-row:last-child { margin-bottom: 0; }
 
   .skills .skill-row h3,
   .skills .skill-row p {
     display: inline;
+    margin: 0;
+  }
+
+  .skills .skill-row h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0;
   }
 
   .skills .skill-row h3::after {
-    content: " — ";
-    font-weight: 400;
+    content: "  ";
+    white-space: pre;
   }
 
-  .skills h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 0 0 0.22rem;
+  .skills .skill-row p { color: var(--text-muted); }
+
+  /* ---------- experience ---------- */
+
+  /* The dated line sits directly under each role heading. */
+  h3 + p {
+    color: var(--text-faint);
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
   }
 
-  .skills p { margin: 0 0 0.22rem; }
+  h3 + p strong { font-weight: 600; color: var(--text-muted); }
 
-  /* ---------- project blocks ---------- */
+  /* ---------- project cards ---------- */
 
   .project {
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.38rem 0.6rem;
+    margin-bottom: 0.2rem;
     break-inside: avoid;
     page-break-inside: avoid;
-    margin-bottom: 0.15rem;
   }
 
-  /* The dated line directly under a job heading. */
-  h3 + p strong { font-weight: 700; }
+  .project > p:first-child {
+    color: var(--text-muted);
+    font-size: 0.97rem;
+    margin-bottom: 0.2rem;
+  }
+
+  /* The title already forms its own line, so the Markdown line break
+     that follows it would add an empty one. */
+  .project > p:first-child br { display: none; }
+
+  .project > p:first-child strong {
+    display: block;
+    color: var(--text);
+    font-size: 1.03rem;
+    letter-spacing: -0.01em;
+  }
+
+  .project ul { margin-bottom: 0; }
+
+  /* ---------- screen only ---------- */
 
   @media screen {
+    :root { --bg: #fafaf9; }
+
     body {
       max-width: 210mm;
       margin: 0 auto;
-      padding: 14mm 15mm;
+      padding: 13mm 14mm 20mm;
+    }
+
+    a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    :root {
+      --bg:         #1c1917;
+      --bg-raised:  #262322;
+      --bg-sunken:  #201d1c;
+      --text:       #f5f5f4;
+      --text-muted: #c4c0bb;
+      --text-faint: #a8a29e;
+      --border:     #3a3533;
+      --border-strong: #514b48;
+      --accent:     #fdba74;
     }
   }
 </style>
@@ -309,7 +401,6 @@
 </ul>
 <hr>
 <h3>Senior Frontend Engineer — ConsenSys</h3>
-<section class="project">
 <p><strong>Mar 2017 – Jun 2020 · Cluj-Napoca, Romania</strong></p>
 <ul>
 <li>Led frontend delivery across a team of four engineers, combining hands-on development with technical coordination, mentoring, and client-facing consulting.</li>
@@ -318,37 +409,26 @@
 <li>Delivered <strong>Breaker</strong>, an Electron desktop application, and <strong>Tokit</strong>, a rights-management gateway and project-creation application.</li>
 <li>Worked directly with clients on requirements analysis, technical solutions, and delivery planning.</li>
 </ul>
-</section>
-
 <hr>
 <h2>Earlier Experience</h2>
 <h3>Frontend JavaScript Engineer — MCRO</h3>
-<section class="project">
 <p><strong>2016 – 2017 · Cluj-Napoca, Romania</strong></p>
 <ul>
 <li>Built Uniqlo&#39;s mobile web application using React, including server-side rendering, Redux, GraphQL integrations, and API-driven interfaces.</li>
 <li>Configured and optimized Webpack and Babel tooling.</li>
 <li>Contributed to requirements analysis and client communication.</li>
 </ul>
-</section>
-
 <p><strong>Stack:</strong> React · JavaScript · Redux · GraphQL · Webpack · Babel · CSS / SCSS</p>
 <h3>Frontend JavaScript Engineer — AROBS Software</h3>
-<section class="project">
 <p><strong>2013 – 2015 · Chișinău, Moldova</strong></p>
 <ul>
 <li>Developed web applications and a rights-management platform for Warner Music Group using JavaScript, AngularJS, REST APIs, HTML, and CSS / LESS.</li>
 </ul>
-</section>
-
 <h3>Frontend Developer — Fruitware</h3>
-<section class="project">
 <p><strong>2012 – 2013 · Chișinău, Moldova</strong></p>
 <ul>
 <li>Developed responsive web interfaces and JavaScript applications using AngularJS, REST APIs, HTML, and CSS / LESS.</li>
 </ul>
-</section>
-
 <hr>
 <h2>Education</h2>
 <p><strong>Master&#39;s Degree — Software Technology Products</strong><br>Moldova State University · 2012 – 2014</p>
