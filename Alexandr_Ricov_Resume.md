@@ -30,7 +30,7 @@ Frontend architecture · Component architecture · Design systems · Responsive 
 
 ### Frameworks & Libraries
 
-React Router · Redux · React Context · TanStack Query · Next.js · Electron · Zustand · Framer Motion
+React Router · Redux · React Context · TanStack Query · Next.js · Electron · Framer Motion
 
 ### Styling & Design Systems
 
@@ -66,7 +66,7 @@ Code review · Technical mentoring · Client communication · Requirements analy
 
 ### Senior Frontend Engineer — Digital M.O.B.
 
-**Jul 2020 – Jul 2026 · Bucharest, Romania**
+**Jul 2020 – Sep 2026 · Bucharest, Romania**
 
 Product engineering studio building complex applications for international clients and startups.
 
@@ -105,7 +105,7 @@ Generative AI media suite for brand content creation.
 - Worked on reusable component architecture, responsive UI, theming, and product workflows.
 - Current production Lighthouse accessibility score: **87/100**.
 
-**Seek3rWallet (2022–2024)**  
+**Seek3rWallet (2022–2026)**  
 Portfolio manager, browser-extension wallet, and peer-to-peer marketplace.
 
 - Delivered much of the frontend independently.
