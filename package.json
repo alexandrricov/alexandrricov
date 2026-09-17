@@ -1,0 +1,14 @@
+{
+  "name": "alexandr-ricov-resume",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Master Markdown resume with a Markdown -> HTML -> PDF build",
+  "type": "module",
+  "scripts": {
+    "resume": "node scripts/build-resume.mjs"
+  },
+  "dependencies": {
+    "marked": "^18.0.13",
+    "puppeteer": "^25.11.0"
+  }
+}
