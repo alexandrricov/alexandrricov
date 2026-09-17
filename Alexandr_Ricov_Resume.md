@@ -6,7 +6,7 @@ Bucharest, Romania
 +40 726 651 605 · alexandr.ricov@gmail.com  
 LinkedIn: https://www.linkedin.com/in/alexandr-ricov
 
-Open to remote roles and hybrid roles in Bucharest. EU work authorization. Available internationally as an independent contractor.
+Open to remote roles and hybrid roles in Bucharest. EU work authorization.
 
 ---
 
@@ -22,7 +22,7 @@ Built products across fintech, healthcare, AI media, and Web3, including applica
 
 ### Core
 
-React · TypeScript · JavaScript · HTML5 · CSS3 · SCSS
+React · TypeScript · JavaScript · HTML5 · CSS3
 
 ### Frontend Architecture & UI
 
@@ -70,33 +70,29 @@ Code review · Technical mentoring · Client communication · Requirements analy
 
 Product engineering studio building complex applications for international clients and startups.
 
-- Primary frontend engineer and technical owner across multiple production products, typically working in teams of 5–10 engineers and owning a significant part of frontend delivery.
+- Primary frontend engineer across multiple production products in fintech, AI, and Web3, typically working in teams of 5–10 engineers.
 - Defined frontend architecture and implementation approaches while remaining hands-on with production code, debugging, refactoring, and code review.
-- Built complex React and TypeScript applications with reusable component systems, responsive layouts, modern CSS architecture, theming, internationalization, and maintainable state-management patterns.
-- Worked directly with clients to clarify requirements, evaluate technical options, and turn product designs into production interfaces.
-- Built production applications with 200+ React components and reusable design-system primitives.
-- Implemented accessibility improvements across production products; current live applications in the portfolio average 91/100 Lighthouse accessibility across seven measured deployments.
-- Delivered a 7-locale internationalization system with ~980 translation keys, compile-time key validation, and CI parity checks.
-- Established frontend testing from scratch on one production product, delivering 244 test cases across 17 Vitest suites.
+- Built complex React and TypeScript applications with reusable component systems, responsive UI, theming, internationalization, and maintainable state-management patterns.
+- Worked directly with clients to clarify requirements, evaluate technical options, and turn product designs into production applications.
 
 #### Selected Projects
 
 **DRE App (2026)**  
 Global financial application for saving, spending, investing, and moving money internationally.
 
-- Architected and built a 39-route React application with 239 components and 115 custom hooks.
-- Implemented support for 7 locales with ~980 translation keys.
-- Added compile-time translation-key validation and a CI parity check to prevent missing-translation regressions.
-- Integrated authentication, account abstraction, and cross-chain routing across multiple blockchain networks.
-- Current production Lighthouse accessibility score: **96/100**.
+- Led frontend architecture and implementation across a complex 39-route React application.
+- Built a 7-locale internationalization system with ~980 translation keys per locale.
+- Added compile-time translation-key validation and CI parity checks to prevent missing-translation regressions.
+- Integrated authentication, ERC-4337 account abstraction, and cross-chain routing across multiple blockchain networks.
+- Current production Lighthouse accessibility score: 96/100.
 
 **Taunt Bet (2026)**  
-Data-heavy React product with blockchain integrations.
+Data-heavy prediction and betting platform with Solana integrations.
 
-- Lead frontend engineer with substantial ownership of the frontend codebase.
-- Built a ~74,000-line React application with 256 components, 38 routes, 45 design-system primitives, and 108 custom hooks.
-- Established the frontend testing practice from zero: **244 test cases across 17 Vitest suites**.
-- Integrated five Solana Anchor program IDLs and wallet-standard flows.
+- Led frontend architecture and implementation across a complex React application.
+- Built reusable UI and design-system foundations for the product.
+- Established the frontend testing practice from scratch: 244 test cases across 17 Vitest suites.
+- Integrated five Solana Anchor programs, including wallet-standard flows and wallet integrations.
 
 **Daisy (2025–2026)**  
 Generative AI media suite for brand content creation.
@@ -133,15 +129,11 @@ Financial platform focused on buying, saving, and borrowing.
 
 Preventive-healthcare startup providing personalized screening plans and laboratory-test interpretation for the Romanian market.
 
-- Sole frontend engineer on the product, taking the frontend from an initial visual direction to production launch in under four months.
-- Built the React and TypeScript application architecture, reusable component system, and all product screens.
-- Delivered **148 React components, 15 routes, and 47 multi-step wizard screens** across five clinical flows.
-- Implemented responsive UI, light/dark theming, accessibility, and bilingual support with ~934 translation keys.
-- Expanded an initial design direction into a complete and consistent UI system.
-- Also contributed to the backend and product integrations, including payment processing and laboratory-data import.
-- Current production Lighthouse scores:
-  - Marketing site: **100 Accessibility / 100 Best Practices / 100 SEO**
-  - Authenticated app: **92 Accessibility / 100 Best Practices / 100 SEO**
+- Sole frontend engineer, taking the product from an initial visual direction to production launch in under four months.
+- Designed the frontend architecture and reusable UI system and implemented the complete React and TypeScript application.
+- Built five multi-step clinical flows spanning 47 screens, with responsive UI, light/dark theming, bilingual support, and accessibility.
+- Contributed beyond the frontend to payment processing, laboratory-data imports, and backend implementation.
+- Current Lighthouse scores: **100 Accessibility / 100 Best Practices / 100 SEO** for the public site and **92 / 100 / 100** for the authenticated application.
 
 ---
 
