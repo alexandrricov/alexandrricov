@@ -36,7 +36,7 @@ Alexandr_Ricov_Resume.md   master resume — edit this
 templates/resume.html      styles and page shell, shared by screen and print
 scripts/build-resume.mjs   Markdown -> HTML -> PDF
 index.html                 generated page, served by GitHub Pages
-dist/                      generated PDF and a copy of the page
+dist/                      generated PDF
 ```
 
 Supporting measurements behind the resume are kept in an untracked `metrics.md`, alongside earlier drafts in

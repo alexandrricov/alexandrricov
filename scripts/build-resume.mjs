@@ -116,12 +116,10 @@ async function main() {
 
   await mkdir(OUT_DIR, { recursive: true });
 
-  const htmlPath = join(OUT_DIR, `${OUT_NAME}.html`);
   const pdfPath = join(OUT_DIR, `${OUT_NAME}.pdf`);
-  // GitHub Pages serves the repository root, so the same page lands there too.
+  // GitHub Pages serves the repository root, so the page lands there.
   const indexPath = join(ROOT, 'index.html');
 
-  await writeFile(htmlPath, html, 'utf8');
   await writeFile(indexPath, html, 'utf8');
 
   let browser;
@@ -153,7 +151,6 @@ async function main() {
 
   console.log('\n✔ Resume built');
   console.log(`  source : ${SOURCE.replace(ROOT + '/', '')}`);
-  console.log(`  html   : ${htmlPath.replace(ROOT + '/', '')}`);
   console.log(`  page   : ${indexPath.replace(ROOT + '/', '')}`);
   console.log(`  pdf    : ${pdfPath.replace(ROOT + '/', '')}`);
   console.log(`  size   : ${(pdf.length / 1024).toFixed(0)} KB`);
