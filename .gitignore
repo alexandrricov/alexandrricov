@@ -2,4 +2,10 @@ node_modules/
 .DS_Store
 *.log
 
-# dist/ is intentionally committed so the generated PDF stays linkable.
+# Supporting evidence and earlier drafts stay local: they contain
+# client-internal detail that does not belong in a public repository.
+metrics.md
+archive/
+
+# dist/ and index.html are intentionally committed so the generated
+# PDF stays linkable and GitHub Pages can serve the HTML.

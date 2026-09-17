@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexandr Rîcov — Senior Frontend Engineer</title>
+<style>
+  /* ------------------------------------------------------------------
+     Resume stylesheet.
+
+     Screen and print share one visual language: warm neutral palette,
+     editorial type scale, project cards, run-in skill rows.
+
+     What print deliberately keeps for ATS parsing: a single column,
+     real selectable text, logical document order, no layout tables and
+     no text rendered as an image. Card backgrounds and accent colour do
+     not affect text extraction, so they stay.
+     ------------------------------------------------------------------ */
+
+  :root {
+    --bg:         #ffffff;
+    --bg-raised:  #ffffff;
+    --bg-sunken:  #f5f5f4;
+    --text:       #1c1917;
+    --text-muted: #57534e;
+    --text-faint: #78716c;
+    --border:     #e7e5e4;
+    --border-strong: #d6d3d1;
+    --accent:     #9a3412;
+
+    --radius: 8px;
+  }
+
+  @page {
+    size: A4;
+    margin: 13mm 14mm;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { font-size: 10pt; -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+                 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.38;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ---------- headings ---------- */
+
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.08;
+    letter-spacing: -0.022em;
+    margin: 0 0 0.18rem;
+  }
+
+  h2 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin: 0.68rem 0 0.38rem;
+    padding-bottom: 0.22rem;
+    border-bottom: 1px solid var(--border-strong);
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    letter-spacing: -0.012em;
+    margin: 0.62rem 0 0.05rem;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  h4 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    margin: 0.6rem 0 0.32rem;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Keep a heading attached to the block that follows it. */
+  h2 + *, h3 + *, h4 + * {
+    break-before: avoid;
+    page-break-before: avoid;
+  }
+
+  /* ---------- text ---------- */
+
+  p {
+    margin: 0 0 0.32rem;
+    orphans: 2;
+    widows: 2;
+  }
+
+  strong { font-weight: 700; }
+
+  a { color: var(--text); text-decoration: none; }
+
+  hr { border: 0; height: 0; margin: 0; }
+
+  /* ---------- lists ---------- */
+
+  ul {
+    margin: 0.12rem 0 0.3rem;
+    padding-left: 1rem;
+  }
+
+  li {
+    margin-bottom: 0.11rem;
+    orphans: 2;
+    widows: 2;
+  }
+
+  li::marker { color: var(--text-faint); }
+
+  li:last-child { margin-bottom: 0; }
+
+  ul ul {
+    margin: 0.14rem 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  li:has(> ul) {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* ---------- masthead ---------- */
+
+  .masthead {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.1rem;
+  }
+
+  /* Role line, directly under the name. */
+  .masthead > p:first-of-type {
+    font-size: 1.02rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: -0.005em;
+    margin-bottom: 0.4rem;
+  }
+
+  .masthead > p:first-of-type strong { font-weight: 500; }
+
+  .masthead p { margin-bottom: 0.22rem; color: var(--text-muted); }
+
+  .masthead p:last-child { margin-bottom: 0; }
+
+  /* ---------- technical skills ---------- */
+
+  /* The subsection heading runs into its values as one continuous line
+     of text. A grid or column layout here would interleave label and
+     value text when the PDF is parsed. */
+  .skills {
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.45rem 0.65rem;
+  }
+
+  .skills .skill-row {
+    margin-bottom: 0.2rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .skills .skill-row:last-child { margin-bottom: 0; }
+
+  .skills .skill-row h3,
+  .skills .skill-row p {
+    display: inline;
+    margin: 0;
+  }
+
+  .skills .skill-row h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .skills .skill-row h3::after {
+    content: "  ";
+    white-space: pre;
+  }
+
+  .skills .skill-row p { color: var(--text-muted); }
+
+  /* ---------- experience ---------- */
+
+  /* The dated line sits directly under each role heading. */
+  h3 + p {
+    color: var(--text-faint);
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+
+  h3 + p strong { font-weight: 600; color: var(--text-muted); }
+
+  /* ---------- project cards ---------- */
+
+  .project {
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.38rem 0.6rem;
+    margin-bottom: 0.2rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .project > p:first-child {
+    color: var(--text-muted);
+    font-size: 0.97rem;
+    margin-bottom: 0.2rem;
+  }
+
+  /* The title already forms its own line, so the Markdown line break
+     that follows it would add an empty one. */
+  .project > p:first-child br { display: none; }
+
+  .project > p:first-child strong {
+    display: block;
+    color: var(--text);
+    font-size: 1.03rem;
+    letter-spacing: -0.01em;
+  }
+
+  .project ul { margin-bottom: 0; }
+
+  /* ---------- screen only ---------- */
+
+  @media screen {
+    :root { --bg: #fafaf9; }
+
+    body {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 13mm 14mm 20mm;
+    }
+
+    a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    :root {
+      --bg:         #1c1917;
+      --bg-raised:  #262322;
+      --bg-sunken:  #201d1c;
+      --text:       #f5f5f4;
+      --text-muted: #c4c0bb;
+      --text-faint: #a8a29e;
+      --border:     #3a3533;
+      --border-strong: #514b48;
+      --accent:     #fdba74;
+    }
+  }
+</style>
+</head>
+<body>
+<header class="masthead">
+<h1>Alexandr Rîcov</h1>
+<p><strong>Senior Frontend Engineer | React · TypeScript · Frontend Architecture · Accessibility</strong></p>
+<p>Bucharest, Romania<br>+40 726 651 605 · <a href="mailto:alexandr.ricov@gmail.com">alexandr.ricov@gmail.com</a><br>LinkedIn: <a href="https://www.linkedin.com/in/alexandr-ricov">https://www.linkedin.com/in/alexandr-ricov</a></p>
+<p>Open to remote roles and hybrid roles in Bucharest. EU work authorization. Available internationally as an independent contractor.</p>
+</header>
+<hr>
+<h2>Profile</h2>
+<p>Senior Frontend Engineer with 14 years of experience building complex production web applications, primarily with React and TypeScript. Strong background in frontend architecture, complex UI systems, accessibility, and end-to-end technical ownership, from architecture and reusable component systems to production launch.</p>
+<p>Built products across fintech, healthcare, AI media, and Web3, including applications with 200+ React components, multi-language interfaces, complex financial workflows, and production accessibility scores up to 100/100 in Lighthouse. Previously led frontend delivery across a team of four engineers at ConsenSys while remaining hands-on.</p>
+<hr>
+<h2>Technical Skills</h2>
+<section class="skills">
+
+<div class="skill-row"><h3>Core</h3><p>React · TypeScript · JavaScript · HTML5 · CSS3 · SCSS</p></div>
+
+<div class="skill-row"><h3>Frontend Architecture &amp; UI</h3><p>Frontend architecture · Component architecture · Design systems · Responsive UI · Theming · Semantic HTML · Internationalization (i18n) · Accessibility (WCAG / a11y)</p></div>
+
+<div class="skill-row"><h3>Frameworks &amp; Libraries</h3><p>React Router · Redux · React Context · TanStack Query · Next.js · Electron</p></div>
+
+<div class="skill-row"><h3>Styling &amp; Design Systems</h3><p>Tailwind CSS · Storybook · CSS architecture · Design tokens · Reusable component systems</p></div>
+
+<div class="skill-row"><h3>APIs &amp; Data</h3><p>REST · GraphQL</p></div>
+
+<div class="skill-row"><h3>Build &amp; Tooling</h3><p>Vite · Webpack · Babel · ESLint · Prettier · Git</p></div>
+
+<div class="skill-row"><h3>Testing</h3><p>Vitest · Testing Library · jsdom</p></div>
+
+<div class="skill-row"><h3>Web3</h3><p>ethers.js · viem · wagmi · web3.js · EVM dApp integration · Wallet connectivity</p></div>
+
+<div class="skill-row"><h3>AI-assisted Development</h3><p>Claude · Codex — implementation, refactoring, debugging, code analysis</p></div>
+
+<div class="skill-row"><h3>Engineering Practice</h3><p>Code review · Technical mentoring · Client communication · Requirements analysis · Technical ownership</p></div>
+
+</section>
+<hr>
+<h2>Professional Experience</h2>
+<h3>Senior Frontend Engineer — Digital M.O.B.</h3>
+<p><strong>Jul 2020 – Sep 2026 · Bucharest, Romania</strong></p>
+<p>Product engineering studio building complex applications for international clients and startups.</p>
+<ul>
+<li>Primary frontend engineer and technical owner across multiple production products, typically working in teams of 5–10 engineers and owning a significant part of frontend delivery.</li>
+<li>Defined frontend architecture and implementation approaches while remaining hands-on with production code, debugging, refactoring, and code review.</li>
+<li>Built complex React and TypeScript applications with reusable component systems, responsive layouts, modern CSS architecture, theming, internationalization, and maintainable state-management patterns.</li>
+<li>Worked directly with clients to clarify requirements, evaluate technical options, and turn product designs into production interfaces.</li>
+<li>Built production applications with 200+ React components and reusable design-system primitives.</li>
+<li>Implemented accessibility improvements across production products; current live applications in the portfolio average 91/100 Lighthouse accessibility across seven measured deployments.</li>
+<li>Delivered a 7-locale internationalization system with ~980 translation keys, compile-time key validation, and CI parity checks.</li>
+<li>Established frontend testing from scratch on one production product, delivering 244 test cases across 17 Vitest suites.</li>
+</ul>
+<h4>Selected Projects</h4>
+<section class="project">
+<p><strong>DRE App (2026)</strong><br>Global financial application for saving, spending, investing, and moving money internationally.</p>
+<ul>
+<li>Architected and built a 39-route React application with 239 components and 115 custom hooks.</li>
+<li>Implemented support for 7 locales with ~980 translation keys.</li>
+<li>Added compile-time translation-key validation and a CI parity check to prevent missing-translation regressions.</li>
+<li>Integrated authentication, account abstraction, and cross-chain routing across multiple blockchain networks.</li>
+<li>Current production Lighthouse accessibility score: <strong>96/100</strong>.</li>
+</ul>
+</section>
+
+<section class="project">
+<p><strong>Taunt Bet (2026)</strong><br>Data-heavy React product with blockchain integrations.</p>
+<ul>
+<li>Lead frontend engineer with substantial ownership of the frontend codebase.</li>
+<li>Built a ~74,000-line React application with 256 components, 38 routes, 45 design-system primitives, and 108 custom hooks.</li>
+<li>Established the frontend testing practice from zero: <strong>244 test cases across 17 Vitest suites</strong>.</li>
+<li>Integrated five Solana Anchor program IDLs and wallet-standard flows.</li>
+</ul>
+</section>
+
+<section class="project">
+<p><strong>Daisy (2025–2026)</strong><br>Generative AI media suite for brand content creation.</p>
+<ul>
+<li>Built and maintained complex production UI in React and TypeScript.</li>
+<li>Worked on reusable component architecture, responsive UI, theming, and product workflows.</li>
+<li>Current production Lighthouse accessibility score: <strong>87/100</strong>.</li>
+</ul>
+</section>
+
+<section class="project">
+<p><strong>Seek3rWallet (2022–2024)</strong><br>Portfolio manager, browser-extension wallet, and peer-to-peer marketplace.</p>
+<ul>
+<li>Delivered much of the frontend independently.</li>
+<li>Built a 44-route application with a large reusable component system and 306 design tokens.</li>
+<li>Implemented light, dark, and system themes.</li>
+<li>Integrated EVM, Bitcoin, and ABlock chain families plus on/off-ramp and cross-chain tooling.</li>
+</ul>
+</section>
+
+<section class="project">
+<p><strong>Orange Standard (2025–2026)</strong><br>Financial platform focused on buying, saving, and borrowing.</p>
+<ul>
+<li>Contributed 224 commits and 72 pull requests within a 10-engineer team.</li>
+<li>Built education and portfolio experiences and contributed to a 157-token design system.</li>
+<li>Current production Lighthouse accessibility score: <strong>87/100</strong>.</li>
+</ul>
+</section>
+
+<section class="project">
+<p><strong>Threshold Network / tBTC (2025–2026)</strong></p>
+<ul>
+<li>Contributed to a dApp spanning EVM, Starknet, Sui, and Bitcoin.</li>
+<li>Worked on wallet integration and vault protocol integrations across multiple ecosystems.</li>
+</ul>
+</section>
+
+<hr>
+<h3>Senior Frontend Engineer — Melio</h3>
+<p><strong>Mar 2026 – Jun 2026 · Bucharest, Romania · Part-time alongside Digital M.O.B.</strong></p>
+<p>Preventive-healthcare startup providing personalized screening plans and laboratory-test interpretation for the Romanian market.</p>
+<ul>
+<li>Sole frontend engineer on the product, taking the frontend from an initial visual direction to production launch in under four months.</li>
+<li>Built the React and TypeScript application architecture, reusable component system, and all product screens.</li>
+<li>Delivered <strong>148 React components, 15 routes, and 47 multi-step wizard screens</strong> across five clinical flows.</li>
+<li>Implemented responsive UI, light/dark theming, accessibility, and bilingual support with ~934 translation keys.</li>
+<li>Expanded an initial design direction into a complete and consistent UI system.</li>
+<li>Also contributed to the backend and product integrations, including payment processing and laboratory-data import.</li>
+<li>Current production Lighthouse scores:<ul>
+<li>Marketing site: <strong>100 Accessibility / 100 Best Practices / 100 SEO</strong></li>
+<li>Authenticated app: <strong>92 Accessibility / 100 Best Practices / 100 SEO</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Senior Frontend Engineer — ConsenSys</h3>
+<p><strong>Mar 2017 – Jun 2020 · Cluj-Napoca, Romania</strong></p>
+<ul>
+<li>Led frontend delivery across a team of four engineers, combining hands-on development with technical coordination, mentoring, and client-facing consulting.</li>
+<li>Contributed to frontend architecture and technical decisions, reviewed code, and helped engineers resolve implementation challenges.</li>
+<li>Built production React applications with complex state management, reusable UI components, and offline-first capabilities.</li>
+<li>Delivered <strong>Breaker</strong>, an Electron desktop application, and <strong>Tokit</strong>, a rights-management gateway and project-creation application.</li>
+<li>Worked directly with clients on requirements analysis, technical solutions, and delivery planning.</li>
+</ul>
+<hr>
+<h2>Earlier Experience</h2>
+<h3>Frontend JavaScript Engineer — MCRO</h3>
+<p><strong>2016 – 2017 · Cluj-Napoca, Romania</strong></p>
+<ul>
+<li>Built Uniqlo&#39;s mobile web application using React, including server-side rendering, Redux, GraphQL integrations, and API-driven interfaces.</li>
+<li>Configured and optimized Webpack and Babel tooling.</li>
+<li>Contributed to requirements analysis and client communication.</li>
+</ul>
+<p><strong>Stack:</strong> React · JavaScript · Redux · GraphQL · Webpack · Babel · CSS / SCSS</p>
+<h3>Frontend JavaScript Engineer — AROBS Software</h3>
+<p><strong>2013 – 2015 · Chișinău, Moldova</strong></p>
+<ul>
+<li>Developed web applications and a rights-management platform for Warner Music Group using JavaScript, AngularJS, REST APIs, HTML, and CSS / LESS.</li>
+</ul>
+<h3>Frontend Developer — Fruitware</h3>
+<p><strong>2012 – 2013 · Chișinău, Moldova</strong></p>
+<ul>
+<li>Developed responsive web interfaces and JavaScript applications using AngularJS, REST APIs, HTML, and CSS / LESS.</li>
+</ul>
+<hr>
+<h2>Education</h2>
+<p><strong>Master&#39;s Degree — Software Technology Products</strong><br>Moldova State University · 2012 – 2014</p>
+<p><strong>Bachelor&#39;s Degree — Informational Management</strong><br>Moldova State University · 2005 – 2009</p>
+<hr>
+<h2>Certification</h2>
+<p><strong>Digital Accessibility School — Accessibility Unity</strong><br>Sep – Dec 2023</p>
+<hr>
+<h2>Languages</h2>
+<ul>
+<li>English — Full Professional</li>
+<li>Romanian — Full Professional</li>
+<li>Russian — Native / Bilingual</li>
+</ul>
+
+</body>
+</html>
