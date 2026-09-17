@@ -30,7 +30,7 @@ Frontend architecture · Component architecture · Design systems · Responsive 
 
 ### Frameworks & Libraries
 
-React Router · Redux · React Context · TanStack Query · Next.js · Electron · Framer Motion
+React Router · Redux · React Context · TanStack Query · Next.js · Electron
 
 ### Styling & Design Systems
 
@@ -105,7 +105,7 @@ Generative AI media suite for brand content creation.
 - Worked on reusable component architecture, responsive UI, theming, and product workflows.
 - Current production Lighthouse accessibility score: **87/100**.
 
-**Seek3rWallet (2022–2026)**  
+**Seek3rWallet (2022–2024)**  
 Portfolio manager, browser-extension wallet, and peer-to-peer marketplace.
 
 - Delivered much of the frontend independently.
