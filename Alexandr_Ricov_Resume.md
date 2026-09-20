@@ -12,17 +12,13 @@ Open to remote roles and hybrid roles in Bucharest. EU work authorization.
 
 ## Profile
 
-Senior Frontend Engineer focused on building complex production web applications with React and TypeScript.
+Senior Frontend Engineer building production web applications with React and TypeScript.
 
-I specialize in frontend architecture and complex UI systems, with a strong focus on reusable components, design systems, responsive interfaces, accessibility and internationalization.
+I specialize in frontend architecture and UI systems: reusable components, design systems, responsive interfaces, accessibility and internationalization.
 
 I've worked across fintech, healthcare, AI and Web3 products, often taking ownership of the frontend from architecture and technical decisions through hands-on implementation and production launch.
 
-My experience includes complex financial applications, multi-step healthcare workflows, multilingual products, browser-extension wallets and AI-powered interfaces. I've also introduced testing practices from scratch, built type-safe internationalization systems and worked extensively with accessibility and WCAG.
-
-I enjoy staying hands-on, solving practical product problems and working closely with product, design and other engineers.
-
-My current stack is centered around React, TypeScript, JavaScript, Vite, Tailwind CSS and modern frontend tooling.
+My experience includes financial applications, multi-step healthcare workflows, multilingual products, a browser-extension wallet and AI-powered interfaces. I've also introduced testing practices from scratch, built type-safe internationalization systems and worked extensively with accessibility and WCAG.
 
 ---
 
@@ -76,11 +72,11 @@ Code review · Technical mentoring · Client communication · Requirements analy
 
 **Jul 2020 – Sep 2026 · Bucharest, Romania**
 
-Product engineering studio building complex applications for international clients and startups.
+Product engineering studio building production applications for international clients and startups.
 
 - Primary frontend engineer across multiple production products in fintech, AI, and Web3, typically working in teams of 5–10 engineers.
 - Defined frontend architecture and implementation approaches while remaining hands-on with production code, debugging, refactoring, and code review.
-- Built complex React and TypeScript applications with reusable component systems, responsive UI, theming, internationalization, and maintainable state-management patterns.
+- Built React and TypeScript applications with reusable component systems, responsive UI, theming, internationalization, and maintainable state-management patterns.
 - Worked directly with clients to clarify requirements, evaluate technical options, and turn product designs into production applications.
 
 #### Selected Projects
@@ -88,7 +84,7 @@ Product engineering studio building complex applications for international clien
 **DRE App (2026)**  
 Global financial application for saving, spending, investing, and moving money internationally.
 
-- Led frontend architecture and implementation across a complex 39-route React application.
+- Led frontend architecture and implementation across a 39-route React application.
 - Built a 7-locale internationalization system with ~980 translation keys per locale.
 - Added compile-time translation-key validation and CI parity checks to prevent missing-translation regressions.
 - Integrated authentication, ERC-4337 account abstraction, and cross-chain routing across multiple blockchain networks.
@@ -97,7 +93,7 @@ Global financial application for saving, spending, investing, and moving money i
 **Taunt Bet (2026)**  
 Data-heavy prediction and betting platform with Solana integrations.
 
-- Led frontend architecture and implementation across a complex React application.
+- Led frontend architecture and implementation across a large React application.
 - Built reusable UI and design-system foundations for the product.
 - Established the frontend testing practice from scratch: 244 test cases across 17 Vitest suites.
 - Integrated five Solana Anchor programs, including wallet-standard flows and wallet integrations.
@@ -105,7 +101,7 @@ Data-heavy prediction and betting platform with Solana integrations.
 **Daisy (2025–2026)**  
 Generative AI media suite for brand content creation.
 
-- Built and maintained complex production UI in React and TypeScript.
+- Built and maintained production UI in React and TypeScript.
 - Worked on reusable component architecture, responsive UI, theming, and product workflows.
 - Current production Lighthouse accessibility score: **87/100**.
 
