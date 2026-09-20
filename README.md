@@ -4,7 +4,7 @@ Senior Frontend Engineer · React · TypeScript · Frontend Architecture · Acce
 
 [View master resume](./Alexandr_Ricov_Resume.md) ·
 [Read it as a page](https://alexandrricov.github.io/alexandrricov/) ·
-[Download the PDF](./dist/Alexandr_Ricov_Senior_Frontend_Engineer.pdf)
+[Download the PDF](./dist/Alexandr_Ricov.pdf)
 
 ## Source of truth
 

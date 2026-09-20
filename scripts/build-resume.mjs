@@ -22,7 +22,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const SOURCE = join(ROOT, 'Alexandr_Ricov_Resume.md');
 const TEMPLATE = join(ROOT, 'templates', 'resume.html');
 const OUT_DIR = join(ROOT, 'dist');
-const OUT_NAME = 'Alexandr_Ricov_Senior_Frontend_Engineer';
+const OUT_NAME = 'Alexandr_Ricov';
 
 /** Fails the build with a readable message instead of a stack trace. */
 function fail(message, cause) {

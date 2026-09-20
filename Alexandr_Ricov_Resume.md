@@ -2,9 +2,7 @@
 
 **Senior Frontend Engineer | React · TypeScript · Frontend Architecture · Accessibility**
 
-Bucharest, Romania  
-+40 726 651 605 · alexandr.ricov@gmail.com  
-LinkedIn: https://www.linkedin.com/in/alexandr-ricov
+Bucharest, Romania · +40 726 651 605 · alexandr.ricov@gmail.com · [linkedin.com/in/alexandr-ricov](https://www.linkedin.com/in/alexandr-ricov)
 
 Open to remote roles and hybrid roles in Bucharest. EU work authorization.
 
@@ -14,11 +12,11 @@ Open to remote roles and hybrid roles in Bucharest. EU work authorization.
 
 Senior Frontend Engineer building production web applications with React and TypeScript.
 
-I specialize in frontend architecture and UI systems: reusable components, design systems, responsive interfaces, accessibility and internationalization.
+I specialize in frontend architecture and complex UI systems, with a focus on reusable components, design systems, responsive interfaces, accessibility and internationalization.
 
 I've worked across fintech, healthcare, AI and Web3 products, often taking ownership of the frontend from architecture and technical decisions through hands-on implementation and production launch.
 
-My experience includes financial applications, multi-step healthcare workflows, multilingual products, a browser-extension wallet and AI-powered interfaces. I've also introduced testing practices from scratch, built type-safe internationalization systems and worked extensively with accessibility and WCAG.
+My experience includes building complex financial applications, multi-step healthcare workflows, multilingual products, a browser-extension wallet and AI-powered interfaces. I've also introduced testing practices from scratch, built type-safe internationalization systems and worked extensively with accessibility and WCAG.
 
 ---
 
@@ -26,43 +24,23 @@ My experience includes financial applications, multi-step healthcare workflows, 
 
 ### Core
 
-React · TypeScript · JavaScript · HTML5 · CSS3
+React · TypeScript · JavaScript · HTML5 · CSS3 / SCSS
 
-### Frontend Architecture & UI
+### Architecture & UI
 
 Frontend architecture · Component architecture · Design systems · Responsive UI · Theming · Semantic HTML · Internationalization (i18n) · Accessibility (WCAG / a11y)
 
 ### Frameworks & Libraries
 
-React Router · Redux · React Context · TanStack Query · Next.js · Electron
+React Router · Redux · TanStack Query · Next.js · Tailwind CSS · Storybook · Electron
 
-### Styling & Design Systems
+### APIs, Build & Testing
 
-Tailwind CSS · Storybook · CSS architecture · Design tokens · Reusable component systems
-
-### APIs & Data
-
-REST · GraphQL
-
-### Build & Tooling
-
-Vite · Webpack · Babel · ESLint · Prettier · Git
-
-### Testing
-
-Vitest · Testing Library · jsdom
+REST · GraphQL · Vite · Webpack · ESLint · Prettier · Git · Vitest · Testing Library
 
 ### Web3
 
-ethers.js · viem · wagmi · web3.js · EVM dApp integration · Wallet connectivity
-
-### AI-assisted Development
-
-Claude · Codex — implementation, refactoring, debugging, code analysis
-
-### Engineering Practice
-
-Code review · Technical mentoring · Client communication · Requirements analysis · Technical ownership
+ethers.js · viem · wagmi · wallet integration
 
 ---
 
@@ -74,56 +52,31 @@ Code review · Technical mentoring · Client communication · Requirements analy
 
 Product engineering studio building production applications for international clients and startups.
 
-- Primary frontend engineer across multiple production products in fintech, AI, and Web3, typically working in teams of 5–10 engineers.
-- Defined frontend architecture and implementation approaches while remaining hands-on with production code, debugging, refactoring, and code review.
-- Built React and TypeScript applications with reusable component systems, responsive UI, theming, internationalization, and maintainable state-management patterns.
-- Worked directly with clients to clarify requirements, evaluate technical options, and turn product designs into production applications.
+- Primary frontend engineer across multiple production products in fintech, AI and Web3, defining frontend architecture while remaining hands-on with production React and TypeScript code.
+- Built reusable component systems, responsive UI, theming, internationalization and maintainable state-management patterns.
+- Worked directly with clients to clarify requirements, evaluate technical options and turn product designs into production applications.
 
 #### Selected Projects
 
-**DRE App (2026)**  
-Global financial application for saving, spending, investing, and moving money internationally.
+**DRE App (2026) — Global financial application**
 
-- Led frontend architecture and implementation across a 39-route React application.
-- Built a 7-locale internationalization system with ~980 translation keys per locale.
-- Added compile-time translation-key validation and CI parity checks to prevent missing-translation regressions.
-- Integrated authentication, ERC-4337 account abstraction, and cross-chain routing across multiple blockchain networks.
-- Current production Lighthouse accessibility score: 96/100.
+- Led frontend architecture across a 39-route React application; built a 7-locale internationalization system with ~980 translation keys per locale, with compile-time key validation and CI parity checks.
+- Integrated authentication, ERC-4337 account abstraction and cross-chain routing. Current production Lighthouse accessibility: 96/100.
 
-**Taunt Bet (2026)**  
-Data-heavy prediction and betting platform with Solana integrations.
+**Taunt Bet (2026) — Data-heavy prediction platform**
 
-- Led frontend architecture and implementation across a large React application.
-- Built reusable UI and design-system foundations for the product.
-- Established the frontend testing practice from scratch: 244 test cases across 17 Vitest suites.
-- Integrated five Solana Anchor programs, including wallet-standard flows and wallet integrations.
+- Led frontend architecture and built reusable UI and design-system foundations.
+- Established the frontend testing practice from scratch: 244 test cases across 17 Vitest suites; integrated five Solana Anchor programs.
 
-**Daisy (2025–2026)**  
-Generative AI media suite for brand content creation.
+**Daisy (2025–2026) — Generative AI media platform**
 
-- Built and maintained production UI in React and TypeScript.
-- Worked on reusable component architecture, responsive UI, theming, and product workflows.
-- Current production Lighthouse accessibility score: **87/100**.
+- Built production React and TypeScript UI, reusable component architecture and complex product workflows.
 
-**Seek3rWallet (2022–2024)**  
-Portfolio manager, browser-extension wallet, and peer-to-peer marketplace.
+**Seek3rWallet (2022–2024) — Self-custodial browser-extension wallet**
 
-- Delivered much of the frontend independently.
-- Built a 44-route application with a large reusable component system and 306 design tokens.
-- Implemented light, dark, and system themes.
-- Integrated EVM, Bitcoin, and ABlock chain families plus on/off-ramp and cross-chain tooling.
+- Delivered much of the frontend independently across a 44-route application with a large reusable component system, 306 design tokens, light/dark/system themes and EVM, Bitcoin and ABlock integrations.
 
-**Orange Standard (2025–2026)**  
-Financial platform focused on buying, saving, and borrowing.
-
-- Contributed 224 commits and 72 pull requests within a 10-engineer team.
-- Built education and portfolio experiences and contributed to a 157-token design system.
-- Current production Lighthouse accessibility score: **87/100**.
-
-**Threshold Network / tBTC (2025–2026)**
-
-- Contributed to a dApp spanning EVM, Starknet, Sui, and Bitcoin.
-- Worked on wallet integration and vault protocol integrations across multiple ecosystems.
+Additional products: **Orange Standard** (fintech) · **Threshold Network / tBTC** (multi-chain Bitcoin dApp).
 
 ---
 
@@ -133,11 +86,9 @@ Financial platform focused on buying, saving, and borrowing.
 
 Preventive-healthcare startup providing personalized screening plans and laboratory-test interpretation for the Romanian market.
 
-- Sole frontend engineer, taking the product from an initial visual direction to production launch in under four months.
-- Designed the frontend architecture and reusable UI system and implemented the complete React and TypeScript application.
-- Built five multi-step clinical flows spanning 47 screens, with responsive UI, light/dark theming, bilingual support, and accessibility.
-- Contributed beyond the frontend to payment processing, laboratory-data imports, and backend implementation.
-- Current Lighthouse scores: **100 Accessibility / 100 Best Practices / 100 SEO** for the public site and **92 / 100 / 100** for the authenticated application.
+- Sole frontend engineer, taking the product from an initial visual direction to production launch in under four months; designed the frontend architecture and reusable UI system.
+- Built the complete React and TypeScript application, including five multi-step clinical flows spanning 47 screens, responsive UI, light/dark theming, bilingual support and accessibility.
+- Contributed to backend implementation, payment processing and laboratory-data integrations. Production Lighthouse: **100 Accessibility / 100 Best Practices / 100 SEO** on the public site.
 
 ---
 
@@ -145,62 +96,42 @@ Preventive-healthcare startup providing personalized screening plans and laborat
 
 **Mar 2017 – Jun 2020 · Cluj-Napoca, Romania**
 
-- Led frontend delivery across a team of four engineers, combining hands-on development with technical coordination, mentoring, and client-facing consulting.
-- Contributed to frontend architecture and technical decisions, reviewed code, and helped engineers resolve implementation challenges.
-- Built production React applications with complex state management, reusable UI components, and offline-first capabilities.
-- Delivered **Breaker**, an Electron desktop application, and **Tokit**, a rights-management gateway and project-creation application.
-- Worked directly with clients on requirements analysis, technical solutions, and delivery planning.
+- Led frontend delivery across a team of four engineers while remaining hands-on with architecture and production development.
+- Built React applications with complex state management, reusable UI components and offline-first capabilities; mentored engineers and reviewed code.
+- Worked directly with clients on requirements and technical solutions, including Breaker (Electron desktop application) and Tokit (rights-management gateway).
 
 ---
 
 ## Earlier Experience
 
-### Frontend JavaScript Engineer — MCRO
+**Frontend JavaScript Engineer — MCRO** · 2016 – 2017 · Cluj-Napoca, Romania  
+Built Uniqlo's mobile web application with React, including server-side rendering, Redux, GraphQL, Webpack and SCSS.
 
-**2016 – 2017 · Cluj-Napoca, Romania**
+**Frontend JavaScript Engineer — AROBS Software** · 2013 – 2015 · Chișinău, Moldova  
+Developed web applications and a rights-management platform for Warner Music Group using JavaScript, AngularJS, REST APIs and CSS / LESS.
 
-- Built Uniqlo's mobile web application using React, including server-side rendering, Redux, GraphQL integrations, and API-driven interfaces.
-- Configured and optimized Webpack and Babel tooling.
-- Contributed to requirements analysis and client communication.
-
-**Stack:** React · JavaScript · Redux · GraphQL · Webpack · Babel · CSS / SCSS
-
-### Frontend JavaScript Engineer — AROBS Software
-
-**2013 – 2015 · Chișinău, Moldova**
-
-- Developed web applications and a rights-management platform for Warner Music Group using JavaScript, AngularJS, REST APIs, HTML, and CSS / LESS.
-
-### Frontend Developer — Fruitware
-
-**2012 – 2013 · Chișinău, Moldova**
-
-- Developed responsive web interfaces and JavaScript applications using AngularJS, REST APIs, HTML, and CSS / LESS.
+**Frontend Developer — Fruitware** · 2012 – 2013 · Chișinău, Moldova  
+Developed responsive JavaScript and AngularJS web applications.
 
 ---
 
 ## Education
 
-**Master's Degree — Software Technology Products**  
-Moldova State University · 2012 – 2014
-
-**Bachelor's Degree — Informational Management**  
-Moldova State University · 2005 – 2009
+**Moldova State University**  
+Master's Degree — Software Technology Products · 2012 – 2014  
+Bachelor's Degree — Informational Management · 2005 – 2009
 
 ---
 
 ## Certification
 
-**Digital Accessibility School — Accessibility Unity**  
-Sep – Dec 2023
+**Digital Accessibility School — Accessibility Unity** · Sep – Dec 2023
 
 ---
 
 ## Languages
 
-- English — Full Professional
-- Romanian — Full Professional
-- Russian — Native / Bilingual
+English — Full Professional · Romanian — Full Professional · Russian — Native / Bilingual
 
 <!--
 SOURCE-OF-TRUTH NOTES — NOT FOR PUBLIC RESUME EXPORT
