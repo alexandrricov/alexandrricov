@@ -12,9 +12,17 @@ Open to remote roles and hybrid roles in Bucharest. EU work authorization.
 
 ## Profile
 
-Senior Frontend Engineer with 14 years of experience building complex production web applications, primarily with React and TypeScript. Strong background in frontend architecture, complex UI systems, accessibility, and end-to-end technical ownership, from architecture and reusable component systems to production launch.
+Senior Frontend Engineer focused on building complex production web applications with React and TypeScript.
 
-Built products across fintech, healthcare, AI media, and Web3, including applications with 200+ React components, multi-language interfaces, complex financial workflows, and production accessibility scores up to 100/100 in Lighthouse. Previously led frontend delivery across a team of four engineers at ConsenSys while remaining hands-on.
+I specialize in frontend architecture and complex UI systems, with a strong focus on reusable components, design systems, responsive interfaces, accessibility and internationalization.
+
+I've worked across fintech, healthcare, AI and Web3 products, often taking ownership of the frontend from architecture and technical decisions through hands-on implementation and production launch.
+
+My experience includes complex financial applications, multi-step healthcare workflows, multilingual products, browser-extension wallets and AI-powered interfaces. I've also introduced testing practices from scratch, built type-safe internationalization systems and worked extensively with accessibility and WCAG.
+
+I enjoy staying hands-on, solving practical product problems and working closely with product, design and other engineers.
+
+My current stack is centered around React, TypeScript, JavaScript, Vite, Tailwind CSS and modern frontend tooling.
 
 ---
 
